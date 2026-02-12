@@ -1,25 +1,31 @@
 .carousel-container {
-    /* Estilos para el carrusel */
     display: flex;
-    overflow-x: auto; /* Permite el scroll horizontal */
+    overflow-x: auto;
     padding: 3rem 0;
-     /* Espacio vertical para que el zoom no se corte */
 }
 
 .carousel-container img {
-    width: 300px; /* Ancho aumentado para mayor presencia */
-    height: 450px; /* Altura ajustada proporcionalmente */
+    width: 300px;
+    height: 450px;
     object-fit: cover;
-    background-color: #4a3f6b; /* Color de fondo para hacerlas visibles */
-    margin-right: -200px; /* Superposición ajustada para el nuevo ancho */
+    background-color: #4a3f6b;
+    margin-right: -200px;
     border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* Sombra para profundidad */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
     position: relative;
-    transition: transform 0.3s ease; /* Suaviza la animación */
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .carousel-container img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño un 10% */
+    transform: scale(1.1);
     cursor: pointer;
-    z-index: 100; /* Asegura que la imagen se vea completa sobre las demás */
+    z-index: 100;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+    border-color: var(--accent-color);
+}
+
+p {
+    color: var(--accent-color);
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.4);
 }
