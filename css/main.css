@@ -185,7 +185,26 @@ aside {
 
 .video-container {
     /* Estilos para el contenedor del video */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
     margin-bottom: 1rem;
+}
+
+.video-container iframe,
+.video-container img {
+    flex: 1 1 45%; /* Ocupan espacio equitativo, bajando de línea si es necesario */
+    height: 315px; /* Misma altura que el video por defecto */
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.video-container p {
+    flex-basis: 100%; /* Fuerza al texto a ir abajo */
+    text-align: center;
+    margin-top: 1rem;
 }
 
 footer {

@@ -7,11 +7,11 @@
 }
 
 .carousel-container img {
-    width: 200px; /* Ancho casi doble */
-    height: 400px; /* Altura casi doble */
+    width: 300px; /* Ancho aumentado para mayor presencia */
+    height: 450px; /* Altura ajustada proporcionalmente */
     object-fit: cover;
     background-color: #4a3f6b; /* Color de fondo para hacerlas visibles */
-    margin-right: -150px; /* Superposición a la mitad (mitad de 300px) */
+    margin-right: -200px; /* Superposición ajustada para el nuevo ancho */
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* Sombra para profundidad */
     position: relative;
