@@ -37,9 +37,17 @@ nav a:hover {
     background-color: #4a3f6b; /* Morado más claro al pasar el ratón */
 }
 
-main {
+.content-wrapper {
     display: flex;
     padding: 1rem;
+    align-items: flex-start;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
 }
 
 main section {
@@ -111,7 +119,9 @@ aside {
 
 .carousel-container img {
     width: 150px; /* Ancho fijo para las imágenes */
-    height: auto;
+    height: 250px; /* Altura fija para que se vean los bloques */
+    object-fit: cover;
+    background-color: #4a3f6b; /* Color de fondo para hacerlas visibles */
     margin-right: 0.5rem;
     border-radius: 5px;
 }
