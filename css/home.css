@@ -1,0 +1,25 @@
+.carousel-container {
+    /* Estilos para el carrusel */
+    display: flex;
+    overflow-x: auto; /* Permite el scroll horizontal */
+    padding: 3rem 0;
+     /* Espacio vertical para que el zoom no se corte */
+}
+
+.carousel-container img {
+    width: 200px; /* Ancho casi doble */
+    height: 400px; /* Altura casi doble */
+    object-fit: cover;
+    background-color: #4a3f6b; /* Color de fondo para hacerlas visibles */
+    margin-right: -150px; /* Superposición a la mitad (mitad de 300px) */
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5); /* Sombra para profundidad */
+    position: relative;
+    transition: transform 0.3s ease; /* Suaviza la animación */
+}
+
+.carousel-container img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 10% */
+    cursor: pointer;
+    z-index: 100; /* Asegura que la imagen se vea completa sobre las demás */
+}
