@@ -1,0 +1,65 @@
+/* Styles for Clips Page */
+
+:root {
+    /* Variables for consistency and easy updates */
+    --clip-gap: 20px;
+    --clip-border-radius: 12px;
+    --clip-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    --clip-hover-transform: scale(1.03);
+    --primary-accent: #8a2be2; /* BlueViolet - Gaming vibe */
+    --secondary-accent: #00ffff; /* Cyan */
+    --text-glow: rgba(138, 43, 226, 0.5);
+}
+
+/* Main container using Grid for responsive layout */
+.clips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--clip-gap);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    /* Gradient background as per project requirements */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border-radius: var(--clip-border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Iframe styling */
+.clips-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 2px solid transparent;
+    border-radius: var(--clip-border-radius);
+    box-shadow: var(--clip-shadow);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects for interaction */
+.clips-container iframe:hover {
+    transform: var(--clip-hover-transform);
+    border-color: var(--secondary-accent);
+    box-shadow: 0 0 20px var(--text-glow);
+    z-index: 10;
+}
+
+/* Section Title Styling */
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Text shadow for neon effect */
+    text-shadow: 0 0 10px var(--text-glow);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .clips-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
