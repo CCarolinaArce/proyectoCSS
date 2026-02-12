@@ -1,0 +1,64 @@
+/* Estilos específicos para la página de Horarios */
+
+.schedule-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.schedule-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: rgba(30, 30, 30, 0.8); /* Fondo semitransparente */
+    border: 1px solid var(--accent-color, #00ffff);
+    border-radius: 15px;
+    padding: 3rem;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.schedule-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.schedule-info h3 {
+    color: var(--accent-color, #00ffff);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.schedule-time {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 1rem 0;
+    text-shadow: 0 0 10px #8a2be2; /* Brillo violeta */
+}
+
+.schedule-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #8a2be2;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.schedule-image img:hover {
+    transform: scale(1.05);
+}
