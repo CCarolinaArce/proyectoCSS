@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif;
+    background-color: #1a1625; /* Fondo oscuro combinado con morado */
+    color: #e0e0e0; /* Texto claro para contraste */
+    margin: 0;
+}
+
+header {
+    background-color: #302d41; /* Morado oscuro para la cabecera */
+    color: #f3e5f5; /* Lavanda para el texto de la cabecera */
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #242038; /* Otro tono de morado */
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #d8b4fe; /* Lavanda para los enlaces */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #4a3f6b; /* Morado más claro al pasar el ratón */
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+}
+
+main section {
+    background-color: #28243d; /* Fondo para las secciones principales */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+aside {
+    background-color: #28243d; /* Fondo similar al main */
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%; /* Ajusta el ancho según necesites */
+    margin-left: 1rem;
+}
+
+.game-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.game-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    background-color: #302d41; /* Fondo ligeramente más claro para cada item */
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.game-item:hover {
+    transform: translateX(5px); /* Pequeña animación al pasar el mouse */
+}
+
+.game-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 0.8rem;
+}
+
+.game-item div h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #f3e5f5;
+}
+
+.game-item div p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #d8b4fe;
+}
+
+.video-container {
+    /* Estilos para el contenedor del video */
+    margin-bottom: 1rem;
+}
+
+.carousel-container {
+    /* Estilos para el carrusel */
+    display: flex;
+    overflow-x: auto; /* Permite el scroll horizontal */
+    padding: 0.5rem;
+}
+
+.carousel-container img {
+    width: 150px; /* Ancho fijo para las imágenes */
+    height: auto;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #302d41; /* Similar al header */
+    color: #f3e5f5;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social-media {
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    color: #d8b4fe;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
