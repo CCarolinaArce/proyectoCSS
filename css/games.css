@@ -48,3 +48,10 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+@media (max-width: 768px) {
+    .games-gallery {
+        gap: 1rem;
+        padding: 1rem;
+    }
+}

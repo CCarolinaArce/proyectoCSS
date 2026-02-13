@@ -62,3 +62,14 @@
 .schedule-image img:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .schedule-section {
+        padding: 1rem;
+    }
+
+    .schedule-card {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+}
