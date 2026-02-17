@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    background: rgba(30, 30, 30, 0.8); /* Fondo semitransparente */
+    background: rgba(35, 35, 46, 0.8); /* Fondo semitransparente grisáceo */
     border: 1px solid var(--accent-color, #00ffff);
     border-radius: 15px;
     padding: 3rem;

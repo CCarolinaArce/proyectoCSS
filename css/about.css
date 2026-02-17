@@ -46,7 +46,7 @@ main h1 {
     min-width: 300px;
     max-width: 600px;
     padding: 2rem;
-    background: rgba(30, 30, 30, 0.8); /* Fondo semitransparente */
+    background: rgba(35, 35, 46, 0.95); /* Fondo semitransparente grisáceo */
     border-radius: 10px;
     line-height: 1.8;
     text-align: justify;
