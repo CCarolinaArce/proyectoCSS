@@ -25,41 +25,54 @@ main h1 {
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.4); /* Sombra para resaltar el título */
 }
 
-main > p { 
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
+.about-section {
+    margin-bottom: 4rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.about-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text { 
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
     padding: 2rem;
     background: rgba(30, 30, 30, 0.8); /* Fondo semitransparente */
     border-radius: 10px;
     line-height: 1.8;
     text-align: justify;
+    margin: 0;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
-.about-image {
+.about-text:hover {
+    border-color: #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.about-image, .about-picture {
     display: block;
     width: 300px;
-    margin: 0 auto 2rem auto;
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
     border-radius: 50%; /* Bordes redondeados */
     border: 4px solid #00ffff; /* Borde cian alrededor de la imagen */
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Sombra para resaltar la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-image:hover {
+.about-image:hover, .about-picture:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
     box-shadow: 0 0 30px rgba(0, 255, 255, 1); /* Sombra más intensa al hacer hover */
 }
-
-.about-picture {
-    display: block;
-    width: 300px;
-    margin: 0 auto 2rem auto;
-    border-radius: 50%; /* Hace la imagen circular */    
-    border: 4px solid #00ffff; /* Borde cian alrededor de la imagen */
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Sombra para resaltar la imagen */
-}
-
-.about-picture:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-    box-shadow: 0 0 30px rgba(0, 255, 255, 1); /* Sombra más intensa al hacer hover */
-}
-
